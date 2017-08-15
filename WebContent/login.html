@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+<meta charset="utf-8"  http-equiv="content-type"   content="text/html">
+<title>G@meDRonE</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+</head>
+<body>
+<!---------header------------>
+<div id="main">
+<div id ="header">
+    <div id="buttons">
+	     <a href="gallery.html"  title="" class="but but_t">Home</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 <a href="login.html"     title="" class="but but_t">Login</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 <a href="author.html"    title="" class="but but_t">Know more about me</a>
+	</div>
+		 <div id="logo">
+	      <hr><h2> ⚔️ G@merS 5avE l0ts Of L1veS ⚔️</h2>
+		 </div>
+		 
+		 
+</div>
+<!--header ends-->
+<script type="text/javascript" src="lib/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="lib/jquery.nivo.slider.pack.js"></script>
+<!--content starts-->
+                                                 
+                 
+
+
+
+
+<script language="Javascript">
+ function validate()
+ {
+   if(document.frm.Username.value=="" || document.frm.Password.value=="")
+   {
+   alert("Username and Password cannot be null!! are u some kind of nerd");
+   return ;
+   }
+   document.frm.action="validate.jsp";
+   document.frm.submit();
+ }
+</script>
+
+<form name= frm  method="post">
+<p align="centre"><font size="4" color="yellow"><b>Login Form </b></font></p>
+<table align="centre" height="200" width="400" border="2">
+     <tr>
+	    <td><b><font color="yellow">Username :</font></b>
+        </td>
+        <td>
+		    <input type="text" name="Username" size="20" tabindex="1">
+	    </td>		
+    </tr>
+	<tr>
+	    <td><b><font color="yellow">Password :</font></b>
+		</td>
+		<td>
+		    <input type="password" name="Password" size="20" tabindex="2">
+		</td>
+    </tr>
+    <tr align="centre">
+        <td colspan="4">
+            <input type="button" value=" login " name="B1" onclick="validate();" tabindex="3">
+        </td>
+    </tr>
+	
+    	<TR >
+  		<TD ><font size="4" color="white">Logging in for the first time?</font></TD>
+  		<TD><a href="register.html"><font size="4" color="pink">Register</font></a></TD>
+  	</TR>
+</table>
+</form>
+
+
+    <!-- content ends --> 
+    <div style="height:40px"></div>
+    <!-- bottom begin -->
+
+<br>
+<br>
+
+<div id="bottom">
+    <div id="b_col2">
+         <h1>Share with me</h1>
+         <div style="height:15px"></div>
+            <ul>
+                <li><img src="images/fu_i1.png" class=" fu_i"/><a href="author.html">Mail me</a></li>			
+		        <li><img src="images/fu_i2.png" class=" fu_i"/><a href="author.html">Follow me on Facebook</a></li>
+				<li><img src="images/fu_i4.png" class=" fu_i"/><a href="author.html">Follow me on Twitter</a></li>
+			</ul>
+        <div style="clear: both; height:20px;"></div>			
+	</div>
+</div>
+</div>	
+	
+</body>
+</html>

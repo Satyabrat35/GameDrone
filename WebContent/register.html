@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+<meta charset="utf-8"  http-equiv="content-type"   >
+<title>G@meDRonE</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+</head>
+<body>
+<!---------header------------>
+<div id="main">
+<div id ="header">
+    <div id="buttons">
+	     <a href="gallery.html"  title="" class="but but_t">Home</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 <a href="login.html"     title="" class="but but_t">Login</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 <a href="author.html"    title="" class="but but_t">Know more about me</a>
+	</div>
+		 <div id="logo">
+	      <hr><h2></h2>
+		 </div>
+		 
+		 
+</div>
+<!--header ends-->
+<script type="text/javascript" src="lib/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="lib/jquery.nivo.slider.pack.js"></script>
+<!--content starts-->
+
+
+<script language="Javascript">
+function check(){
+	if(document.addgamer.UserName.value==""){
+		alert("please enter all the details");
+		return;
+	}
+	if(document.addgamer.Password.value==""){
+		alert("please enter all the details");
+		return;	
+	}
+	if(document.addgamer.Password2.value!=document.addgamer.Password.value){
+			alert("password doesnot match ");
+			return;	
+		}
+	if(document.addgamer.name.value==""){
+			alert("please enter all the details");
+			return;	
+		}
+	if(isNaN(document.addgamer.hostel.value) || document.addgamer.hostel.value>13){
+			alert("Such hostel doesnot exists");
+			return;	
+		}
+	if(document.addgamer.dept.value==""){
+			alert("please enter all the details");
+			return;	
+		}
+	if(document.addgamer.roll.value==""){
+			alert("please enter all the details");
+			return;	
+		}
+	document.addgamer.action="sign.jsp";
+	document.addgamer.submit();
+}
+</script>
+
+<br><br>
+<br><br>
+<h2>Enter your details</h2>
+<br><br>
+<br><br>
+&nbsp;<b><font color="#FF0000">( Field marked * are necessary)</font>&nbsp;&nbsp;&nbsp;&nbsp;
+<form name="addgamer" method="post">
+ <div align="left">
+    <table border="0" width="100%">
+       <tr>
+        <td width="23%"><b><font color="yellow">Username *:</b></td>
+        <td width="77%">
+            <b>
+  			<input type="text" name="UserName" size="20" tabindex="1">
+            </b>
+        </td>
+      </tr>
+       <tr>
+        <td width="23%"><b><font color="yellow">Password *:</b></td>
+        <td width="77%">
+            <b>
+  			<input type="text" name="Password" size="20" tabindex="1">
+            </b>
+        </td>
+      </tr>
+      <tr>
+        <td width="23%"><b><font color="yellow">Confirm Password *:</b></td>
+        <td width="77%">
+            <b>
+  			<input type="text" name="Password2" size="20" tabindex="1">
+            </b>
+        </td>
+      </tr>
+       <tr>
+        <td width="23%"><b><font color="yellow">Name *:</font></b></td>
+        <td width="77%">
+            <b>
+  			<input type="text" name="name" size="20" tabindex="1">
+            </b>
+        </td>
+      </tr>
+      <tr>
+        <td width="23%"><b><font color="yellow">Hostel No *:</font></b></td>
+        <td width="77%">
+            <b>
+  			<input type="text" name="hostel" size="20" tabindex="1">
+            </b>
+        </td>
+      </tr>
+      <tr>
+        <td width="23%"><b><font color="yellow">Department *:</font></b></td>
+        <td width="77%">
+            <b>
+  			<input type="text" name="dept" size="20" tabindex="1">
+            </b>
+        </td>
+      </tr>
+      <tr>
+        <td width="23%"><b><font color="yellow">Roll No. *:</font></b></td>
+        <td width="77%">
+            <b>
+  			<input type="text" name="roll" size="20" tabindex="1">
+            </b>
+        </td>
+      </tr>
+      <tr>
+        <td width="23%"><b><font color="yellow">Email ID *:</font></b></td>
+        <td width="77%">
+            <b>
+  			<input type="text" name="emailid" size="20" tabindex="1">
+            </b>
+        </td>
+      </tr>
+      <tr>
+        <td width="23%"><b><font color="yellow">Phone No. *:</font></b></td>
+        <td width="77%">
+            <b>
+  			<input type="text" name="phone" size="20" tabindex="1">
+            </b>
+        </td>
+      </tr>
+       <tr>
+        <td width="23%" height="1"></td>
+        <td width="77%" height="1"> </td>
+      </tr>
+      <tr>
+      <td>
+      <input type="submit" value=" Submit " onClick="check();" name="B1">
+      </input>
+      </td>
+      </tr>
+
+</form>
+</table>
+<!-- content ends --> 
+    <div style="height:40px"></div>
+    <!-- bottom begin -->
+
+<br>
+<br>
+
+<div id="bottom">
+    <div id="b_col2">
+         <h1>Share with me</h1>
+         <div style="height:15px"></div>
+            <ul>
+                <li><img src="images/fu_i1.png" class=" fu_i"/><a href="author.html">Mail me</a></li>			
+		        <li><img src="images/fu_i2.png" class=" fu_i"/><a href="author.html">Follow me on Facebook</a></li>
+				<li><img src="images/fu_i4.png" class=" fu_i"/><a href="author.html">Follow me on Twitter</a></li>
+			</ul>
+        <div style="clear: both; height:20px;"></div>			
+	</div>
+</div>
+</div>	
+	
+</body>
+</html>
